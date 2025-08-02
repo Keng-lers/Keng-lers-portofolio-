@@ -1,10 +1,9 @@
-# Keng-lers project 
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - Nama Kamu</title>
+  <title>Portfolio - Keng </title>
   <style>
     :root {
       --clr-bg: #f5f7fa;
@@ -142,7 +141,7 @@
 <body>
 
   <header>
-    <h1>Halo, saya <span id="Keng">Nama Kamu</span></h1>
+    <h1>Halo, saya <span id="Keng">Keng</span></h1>
     <p>Junior Full-Stack Developer & UI Enthusiast</p>
   </header>
 
@@ -212,7 +211,7 @@
   <section id="+6281316447919">
     <h2>Kontak</h2>
     <p>
-      Email: <a href="barokbarok882@gmail.com"</a><br>
+      Email: <a href="barokbarok882@gmail.com">barokbarok882@gmail.com</a><br>
       LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a>
     </p>
   </section>

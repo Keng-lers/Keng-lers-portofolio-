@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="dark-blue-style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">Keng-lers dev.<span class="highlight">.ID</span></h1>
+<!-- HERO -->
+  <header>
+    <img class="avatar" src="Waifu ku.jpg" alt="profile"/>
+    <div class="hero-text">
+      <h1>Keng-lers Dev.</h1>    >
             <nav>
                 <ul>
                     <li><a href="#home">Beranda</a></li>

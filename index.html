@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keng-lers – Gray Edition</title>
+  <style>
+    :root{
+      --bg:#0f0f0f;
+      --bg2:#1e1e1e;
+      --bg-card:#2a2a2a;
+      --text:#d0d0d0;
+      --accent:#888;
+      --accent-hover:#fff;
+      --font:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    }
+    [data-theme="light"]{
+      --bg:#f2f2f2;
+      --bg2:#e0e0e0;
+      --bg-card:#ccc;
+      --text:#111;
+      --accent:#555;
+      --accent-hover:#000;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);transition:background .3s,color .3s}
+    header{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:url('Waifuku.jpg') center/cover fixed}
+    header::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)}
+    header>*{position:relative;z-index:2}
+    .avatar{width:150px;height:150px;border-radius:50%;border:3px solid var(--accent);object-fit:cover;transition:.4s}
+    .avatar:hover{transform:scale(1.08);box-shadow:0 0 20px var(--accent)}
+    .hero-text h1{font-size:2.5rem;margin:15px 0 8px}
+    .hero-text p{font-size:1.1rem;color:var(--accent)}
+    .btn{display:inline-block;margin-top:15px;padding:10px 26px;border:2px solid var(--accent);color:var(--accent);border-radius:50px;text-decoration:none;transition:.3s}
+    .btn:hover{background:var(--accent);color:var(--bg)}
+    nav{position:fixed;top:0;left:0;right:0;background:var(--bg2);backdrop-filter:blur(8px);padding:12px 0;z-index:100}
+    nav ul{display:flex;justify-content:center;gap:25px;list-style:none}
+    nav a{color:var(--text);text-decoration:none;font-weight:600;position:relative}
+    nav a::after{content:'';position:absolute;left:0;bottom:-3px;width:0;height:2px;background:var(--accent);transition:.3s}
+    nav a:hover::after{width:100%}
+    section{max-width:900px;margin:90px auto;padding:0 20px}
+    h2{font-size:1.8rem;margin-bottom:25px;text-align:center}
+    .projects{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--bg-card);border-radius:12px;padding:22px;transition:.3s;position:relative;overflow:hidden}
+    .card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transition:.3s}
+    .card:hover::before{transform:scaleX(1)}
+    .card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,.4)}
+    .card h3{font-size:1.3rem;margin-bottom:8px}
+    .card a{color:var(--accent);font-weight:600;text-decoration:none}
+    .socials{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:20px}
+    .socials a{padding:8px 20px;background:var(--bg2);border:1px solid var(--accent);border-radius:30px;color:var(--accent);text-decoration:none;transition:.3s}
+    .socials a:hover{background:var(--accent);color:var(--bg)}
+    .toggle{position:fixed;bottom:20px;right:20px;background:var(--accent);color:var(--bg);border:none;border-radius:50%;width:45px;height:45px;font-size:20px;cursor:pointer;transition:.3s;z-index:200}
+    .toggle:hover{background:var(--accent-hover)}
+    footer{text-align:center;padding:30px 0;font-size:.9rem;color:var(--accent)}
+  </style>
+</head>
+<body>
+  <!-- Toggle Dark / Light -->
+  <button class="toggle" onclick="toggleTheme()" aria-label="toggle theme">🌓</button>
+
+  <!-- Hero -->
+  <header>
+    <img class="avatar" src="Waifuku.jpg" alt="profile"/>
+    <div class="hero-text">
+      <h1>Keng-lers</h1>
+      <p>IT STUNDENT</p>
+      <a class="btn" href="#projects">ON COMING PROJECT</a>
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>RAM CLEANER</h3>
+        <p>Something to clear your RAM😹</p>
+        <a href="https://t.me/SuShOpSo/25" target="_blank">View post →</a>
+      </div>
+      <div class="card">
+        <h3>:-:-:</h3>
+        <p>:-:-:</p>
+        <a href=" On coming " target="_blank">View post →</a>
+      </div>
+      <div class="card">
+        <h3>AUTO DOWNSCALE</h3>
+        <p>Downscale your game resolution</p>
+        <a href="ONCOMING" target="_blank">View post →</a>
+      </div>
+      <div class="card">
+        <h3>HALAH NYOCOT😹</h3>
+        <p>Genshin & UE tweaks low-end</p>
+        <a href="https://t.me/SuShOpSo/27" target="_blank">View post →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect -->
+  <section id="connect">
+    <h2>Connect</h2>
+    <div class="socials">
+      <a href="BAROKAHMAD" target="_blank">Telegram</a>
+      <a href="AMPUN DEK" target="_blank">TikTok</a>
+      <a href="#">GitHub (soon)</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span>Keng-lers– built with ♥︎
+  </footer>
+
+  <script>
+    // Dark / Light toggle
+    function toggleTheme() {
+      document.body.dataset.theme =
+        document.body.dataset.theme === 'light' ? 'dark' : 'light';
+    }
+    // Auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

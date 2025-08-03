@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="logo">Dayzz_Creator<span class="highlight">.ID</span></h1>
+            <h1 class="logo">Keng-lers dev.<span class="highlight">.ID</span></h1>
             <nav>
                 <ul>
                     <li><a href="#home">Beranda</a></li>
